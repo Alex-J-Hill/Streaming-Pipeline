@@ -2,7 +2,7 @@
 The purpose of this project was to create and end-to-end streaming pipeline of near-realtime GPS data of local transit (TTC) streetcar locations to enable route optimization
 
 ## Data Ingestion
-1. Apache Nifi was deployed on an AWS EC2 instance to poll a public data source via REST API, and tabulate the JSON response objects into a MySQL database deployed on the same instance
+1. Apache Nifi was deployed on an AWS EC2 instance using Docker to poll a public data source via REST API, and tabulate the JSON response objects into a MySQL database deployed on the same instance
 2. Debezium CDC was set up to capture the changes (CDC) to the MySQL database and feed those changes into Kafka
 
 ## Data Transformation
